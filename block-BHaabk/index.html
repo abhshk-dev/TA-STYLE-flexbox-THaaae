@@ -21,10 +21,9 @@
      <title>Exercise 1| Flexbox</title>
      <link rel="stylesheet" href="style.css">
  </head>
- <body>
+ <body id="top">
      <header class="header">
-        
-        <div class="container clearfix"> 
+        <div class="container flex"> 
             <a  class="logo" href="#">
                 <img src="https://www.logodesign.net/images/illustration-logo.png" alt="illustration-logo">
             </a>
@@ -38,50 +37,70 @@
         </div>
      </header>
      <main>
-         <section>
-            <div class="container">
-                <article class="blog">
+         <section class="article-section">
+           
+                <article class="container flex">
                 
                     <div class="col">
-                        <h1>Introduction</h1>
-                        <p>
+                        <h1 class="article-heading">Introduction</h1>
+                        <p class="article-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ea quod! Recusandae, dignissimos nemo.
                             Illo iure assumenda debitis temporibus sapiente provident enim. Quidem a deleniti illum, ea totam inventore suscipit.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ea quod! Recusandae, dignissimos nemo.
-                            Illo iure assumenda debitis temporibus sapiente provident enim. Quidem a deleniti illum, ea totam inventore suscipit.
+                            Illo iure assumenda debitis temporibus sapiente provident enim.
                         </p>
-                        <p>
+                        <p class="article-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam numquam voluptatem perspiciatis,
-                            asperiores reprehenderit fugiat nulla impedit delectus eligendi suscipit, nisi in corporis eaque id officia, iste odio incidunt a?
+                            asperiores reprehenderit  a?
                         </p>
     
                     </div>
                     <div class="col">
-                        <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="a-sitting-cat">
+                        <img class="article-img" src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="a-sitting-cat">
                     </div>
                 </article>
-            </div>
+            
            
          </section>
-         <section>
+         <!--   Gallery section   -->
+         <section class="gallery">
              <div class="container">
-                <article class="blog">
-                
-                    <div class="col">
-                        
-                            <img src="https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg" alt=" pic01">
+                 <h2 class="heading">Gallery</h2>
+                 <div class="flex">
+                     <div class="col-gallery">
+                         <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                     </div>
+                     <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
                     </div>
-                    <div class="col">
-                        <img src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="a-sitting-cat">
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
                     </div>
-                    <div class="col">
-                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic03s">
-
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
                     </div>
-                </article>
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                 </div>
+               
              </div>
          </section>
     </main>
-     <footer></footer>
+     <footer class="footer">
+         <div class="container">
+             <nav>
+                 <a href="#">Facebook</a>
+                 <a href="#">Instagram</a>
+                 <a href="#">Gmail</a>
+             </nav>
+         </div>
+     </footer>
+     <a href="#top" class="btn"> top
+
+     </a>
  </body>
  </html>

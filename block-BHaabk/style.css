@@ -59,7 +59,7 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1330px;
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -76,12 +76,10 @@ body{
 
 .header{
     background-color: cadetblue;
-    height: 72px;
-    line-height: 72px;
+    padding: 24px 0;
 }
 .logo img{
-    width: 50px;
-    height: 50px;
+    width: 120px;
     margin-top: 10px;
     border-radius:18px;
     vertical-align: center;
@@ -93,46 +91,93 @@ body{
     margin:0 20px;
     vertical-align: center;
 }
-.logo{
-    float: left;
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nav{
-    float: right;
-    vertical-align: middle;
-}
-
 /* ------ Blog Section ------ */
 
-.blog{
-    width: 1200px ;
-    padding: 100px ;
-    margin: 100px 0;
+.article-section{
+    padding: 80px 0 ;
+
     background-color: blanchedalmond;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 5px solid #000;
+
 
 }
-.blog h1{
-    font-size: 36px;
-    text-align: center;
+.article-heading{
+    font-size: 44px;
+    text-align: left;
     padding: 10px 0;
+    margin-bottom: 16px ;
 }
 .col{
-    width: 500px;
+    width: 48%;
 }
-.col p{
+.article-text{
     color: grey;
-    font-size: 16px;
-    
+    font-size: 20px;
     line-height: 1.5;
 }
-.col img{
-    width:500px;
-    height: 300px;
+.article-img{
+    width:100%;  
+    border: 6px solid gray;
+    border-radius: 20px;
     object-fit: cover;
-    padding-left:80px;
-    margin: 0 20px;
-    
+}
+.article-section, .flex{
+    align-items: flex-start;
+}
+
+
+/* ----GALLERY STYLING -----*/
+
+.gallery{
+    padding: 80px 0;
+}
+.heading{
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 20px ;
+}
+.col-gallery{
+    width: 30%;
+    margin: 32px 0;
+}
+.gallery img{
+    width: 100%;
+    border: 3px solid darkblue;
+    border-radius: 8px;
+}
+.gallery .flex{
+    flex-wrap: wrap;
+
+}
+/*---- footer---- */
+.footer{
+    background-color: darkcyan;
+    padding: 60px 0;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 18px;
+}
+/* fixed button*/
+.btn{
+    display: flex;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: darkgoldenrod;
+    background-color: black;
+    right: 32px;
+    bottom: 32px;
+    text-decoration: none;
 }
