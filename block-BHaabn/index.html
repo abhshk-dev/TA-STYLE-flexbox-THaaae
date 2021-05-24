@@ -1,0 +1,73 @@
+<!-- 
+- Create a gallery using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Level 1</title>
+    <link rel="stylesheet" href="assets/media/style.css">
+    <script src="https://kit.fontawesome.com/882d59f2ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+            <a  class="logo " href="#">
+                <img  src="assets/media/logo.svg" alt="logo-altcampus">
+            </a>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a  id= "specific" href="#">Gallery</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
+
+    </header>
+    <!--Gallery section-->
+    <section class="gallery ">
+        <div class="container ">
+            <h1 class="heading-gallery">GALLERY</h1>
+            <div class="row flex">
+                
+                <div class="col">
+                    <img  class="gallery-img" src="assets/media/01.png" alt="Pic01">
+                </div>
+                <div class="col">
+                    <img  class="gallery-img"src="assets/media/02.png" alt="Pic02">
+                </div>
+                <div class="col">
+                    <img class="gallery-img" src="assets/media/03.png" alt="Pic03">
+                </div>
+                <div class="col">
+                    <img class="gallery-img" src="assets/media/04.png" alt="Pic01">
+                    
+                </div>
+                <div class="col">
+                    <img class="gallery-img" src="assets/media/05.png" alt="Pic01">
+                </div>
+                <div class="col">
+                    <img class="gallery-img" src="assets/media/06.png" alt="Pic01">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container flex">
+            <small>&copy;AltCampus</small>
+            <nav class="nav">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+</html>
