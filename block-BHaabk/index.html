@@ -1,0 +1,106 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Use flexbox properties and values to create columns.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Exercise 1| Flexbox</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body id="top">
+     <header class="header">
+        <div class="container flex"> 
+            <a  class="logo" href="#">
+                <img src="https://www.logodesign.net/images/illustration-logo.png" alt="illustration-logo">
+            </a>
+            
+
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+            </nav>
+        </div>
+     </header>
+     <main>
+         <section class="article-section">
+           
+                <article class="container flex">
+                
+                    <div class="col">
+                        <h1 class="article-heading">Introduction</h1>
+                        <p class="article-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ea quod! Recusandae, dignissimos nemo.
+                            Illo iure assumenda debitis temporibus sapiente provident enim. Quidem a deleniti illum, ea totam inventore suscipit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ea quod! Recusandae, dignissimos nemo.
+                            Illo iure assumenda debitis temporibus sapiente provident enim.
+                        </p>
+                        <p class="article-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam numquam voluptatem perspiciatis,
+                            asperiores reprehenderit  a?
+                        </p>
+    
+                    </div>
+                    <div class="col">
+                        <img class="article-img" src="https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="a-sitting-cat">
+                    </div>
+                </article>
+            
+           
+         </section>
+         <!--   Gallery section   -->
+         <section class="gallery">
+             <div class="container">
+                 <h2 class="heading">Gallery</h2>
+                 <div class="flex">
+                     <div class="col-gallery">
+                         <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                     </div>
+                     <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                    <div class="col-gallery">
+                        <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="pic01">
+                    </div>
+                 </div>
+               
+             </div>
+         </section>
+    </main>
+     <footer class="footer">
+         <div class="container">
+             <nav>
+                 <a href="#">Facebook</a>
+                 <a href="#">Instagram</a>
+                 <a href="#">Gmail</a>
+             </nav>
+         </div>
+     </footer>
+     <a href="#top" class="btn"> top
+
+     </a>
+ </body>
+ </html>
