@@ -6,3 +6,70 @@
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper. 
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 | Flexbox</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <!---Header Section-->
+    <header class="header">
+        <div class="container flex">
+            <a class="brand"href="#">
+                <img src="assets/icons/altcampus-logo.svg" alt="website-logo">
+            </a>
+            <nav class="nav">
+                <a href="#">
+                    <img src="assets/icons/bell.svg" alt="notification-bell-icon">
+                </a>
+                <small class="user">Sarah Jone</small>
+                <a href="#">
+                    <img src="assets/icons/user.svg" alt="user-notification-icon">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!---Article  Section-->
+        <section class="article-section">
+            <article class="container padding flex">
+                <aside class="col">
+                    <div class="elements">
+                        <img src="assets/icons/dashboard.svg" alt="dashboard">
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="elements">
+                        <img src="assets/icons/article.svg" alt="article">
+                        <span>Article</span>
+                    </div>
+                    <div class="elements">
+                        <img src="assets/icons/analytics.svg" alt="analytics">
+                        <span>Analytics</span>
+                    </div>
+                    <div class="elements">
+                        <img src="assets/icons/inbox.svg" alt="inbox">
+                        <span>Inbox</span>
+                    </div>
+                    <div class="elements">
+                        <img src="assets/icons/setting.svg" alt="settings">
+                        <span>Settings</span>
+                    </div>
+                    <div class="log-out">
+                        <img src="assets/icons/log-out.svg" alt="Log-Out">
+                        <span></span>
+                    </div>
+
+                </aside>
+                <div class="col">
+
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
