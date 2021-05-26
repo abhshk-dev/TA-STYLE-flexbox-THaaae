@@ -66,6 +66,9 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.padding{
+    padding: 60px 32px;
+}
 /*----Header Section -----*/
 
 .header{
@@ -90,21 +93,100 @@ body{
     margin-left:20px;
     vertical-align: top;
 }
-/*----- Article Section -----*/
-.article-section{
-    padding: 20px 0;
-    background-color: lavenderblush;
-}
-.padding{
-    padding: 20px 40px;
-}
-.col{
-    flex: 0 1  30%;
+/*----- Sidebar Section -----*/
+
+.sidebar{
     background-color: #a3caea;
-}
-.elements{
-    padding: 20px;
-    margin: 10px 50px ;
+    padding: 32px;
     display: flex;
-    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 30%;
+    align-self: stretch;
+    border-radius: 8px;
+}
+.nav-sidebar{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav-sidebar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 4px;
+}
+.nav-sidebar a img{
+    vertical-align: middle;
+    margin-right: 12px;
+    
+}
+.nav-sidebar  .active{
+    border: 3px solid orange;
+    color: orange;
+}
+.log-out{
+    border: 0;
+    box-shadow: none;
+    padding: 16px 32px;
+    background-color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: left;
+    font-weight: 700;
+    color: #22396a;
+
+}
+.log-out img{
+    margin-right: 12px;
+    vertical-align: middle;
+  
+}
+
+/* ---- ARTICLE SECTION -----*/
+.article{
+    flex: 0 1 65%;
+    background-color: #e4e5e6;
+    border-radius: 8px;
+    padding: 32px;
+}
+h1{
+    font-size: 44px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+.text{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #22396a;
+    margin-bottom: 12px;
+}
+.article a{
+    text-decoration: none;
+    color: white;
+    background-color:  #30ba66;
+    padding: 12px 36px;
+    margin-top: 24px;
+
+    border-radius: 4px;
+    font-size: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(49, 187, 102,0.64);
+}
+
+/* ---- FOOTER SECTION -----*/
+
+.footer{
+    padding: 44px 0;
+    background-color: #222946;
+    color: rgb(197, 193, 193);
+    font-size: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color:rgb(170, 169, 169);
+    margin-right: 20px;
+    font-size: 20px;
 }

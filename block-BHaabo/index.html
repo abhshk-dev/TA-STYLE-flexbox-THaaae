@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2 | Flexbox</title>
     <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/882d59f2ae.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!---Header Section-->
@@ -33,43 +35,74 @@
             </nav>
         </div>
     </header>
-    <main>
-        <!---Article  Section-->
-        <section class="article-section">
-            <article class="container padding flex">
-                <aside class="col">
-                    <div class="elements">
-                        <img src="assets/icons/dashboard.svg" alt="dashboard">
-                        <p>Dashboard</p>
-                    </div>
-                    <div class="elements">
-                        <img src="assets/icons/article.svg" alt="article">
-                        <span>Article</span>
-                    </div>
-                    <div class="elements">
-                        <img src="assets/icons/analytics.svg" alt="analytics">
-                        <span>Analytics</span>
-                    </div>
-                    <div class="elements">
-                        <img src="assets/icons/inbox.svg" alt="inbox">
-                        <span>Inbox</span>
-                    </div>
-                    <div class="elements">
-                        <img src="assets/icons/setting.svg" alt="settings">
-                        <span>Settings</span>
-                    </div>
-                    <div class="log-out">
+    <!---Article  Section-->
+    <main class="container flex padding">
+                <aside class="sidebar ">
+                    <nav class="nav-sidebar">
+                        <a href="#">
+                            <img src="assets/icons/dashboard.svg" alt="dashboard">
+                            <span>Dashboard</span>
+                        </a>
+                        <a  class="active" href="#">
+                            <img src="assets/icons/article.svg" alt="article">
+                            <span>Article</span>
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/analytics.svg" alt="analytics">
+                            <span>Analytics</span>
+                        </a>
+                        <a href="#" >
+                            <img src="assets/icons/inbox.svg" alt="inbox">
+                            <span>Inbox</span>
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/setting.svg" alt="settings">
+                            <span>Settings</span>
+                        </a>
+                    </nav>
+                    
+                    <button class="log-out">
                         <img src="assets/icons/log-out.svg" alt="Log-Out">
-                        <span></span>
-                    </div>
+                        <span> Log Out</span>
+                    </button>
 
                 </aside>
-                <div class="col">
-
-                </div>
-            </article>
-
-        </section>
+                <article class="article">
+                    <img src="assets/01.png" alt="punch-today-intheface">
+                    <h1>Why are we doing AltCampus?</h1>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta distinctio hic
+                        laudantium possimus autem quibusdam. Porro maiores, voluptas nisi modi illo omnis 
+                        nulla velit quae obcaecati vitae, in earum!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta distinctio hic
+                        laudantium possimus autem quibusdam. Porro maiores, voluptas nisi modi illo omnis 
+                        nulla velit quae obcaecati vitae, in earum!
+                    </p>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta distinctio hic
+                        laudantium possimus autem quibusdam. Porro maiores, voluptas nisi modi illo omnis 
+                        nulla velit quae obcaecati vitae, in earum!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta distinctio hic
+                        laudantium possimus autem quibusdam. Porro maiores, voluptas nisi modi illo omnis 
+                        nulla velit quae obcaecati vitae, in earum!
+                    </p>
+                    <a href="#">Read More</a>
+                </article>
+            
     </main>
+    <!----Footer section-->
+    <footer class="footer ">
+        <div class="container flex">
+            <small>&copy; AltCampus</small>
+            <nav>
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
